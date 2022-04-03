@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add / Edit Form for Courses</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+</head>
+<body class="bodyGeneral">
+    <h1 class="headingParagraph">Add / Edit Form for Courses</h1>
+    <p class="imageParagraph"><img src="img/adem-ay-Tk9m_HP4rgQ-unsplash.jpg" alt="indexLogo" width="600" height="300"></p>
+    <br>
+    <div id="form">
+        <form action="" method="" >
+            
+            <fieldset>
+                <legend>Add Course</legend>
+                <label for="courseTitle">Course Title</label>
+                <input type="text" id="courseTitle" name="courseTitle" placeholder="Course Title" required>
+                
+                <br>
+                <label for="courseStream">Course Stream</label>
+                <input type="text" id="courseStream" name="courseStream" placeholder="Course Stream" required>
+
+                <br>
+                <label for="courseType">Course Type</label>
+                <!--<input type="text" id="courseType" name="courseType" placeholder="Course Type"> -->
+                <select name="courseType" id="courseType">
+                    <option value="Πρωινό" selected>Πρωινό</option>
+                    <option value="Βραδινό">Βραδυνό</option>
+                    <option value="Ολοήμερο">Ολοήμερο</option>
+                </select>
+
+                <br>
+                <label for="courseStartDate">Course Start Date</label>
+                <input type="date" id="courseStartDate" name="courseStartDate" required>
+
+                <br>
+                <label for="courseEndDate">Course End Date</label>
+                <input type="date" id="courseEndDate" name="courseEndDate"  required>
+                
+                <br>
+                <label for="submit"></label>
+                <input type="submit" id="submit" value="Προσθήκη"/>
+                <button type="submit" id="update" hidden>Επεξεργασία</button>
+                <input type="reset" id="reset" value="Καθαρισμός"/>
+
+            </fieldset>
+            <div id="courses"> </div>
+            <script src="js/courses.js"></script>
+        </form>
+    </div>
+
+
+</body>
+</html>
