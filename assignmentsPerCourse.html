@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add / Edit Form for Assignments Per Course</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+</head>
+<body class="bodyGeneral">
+    <h1 class="headingParagraph">Add / Edit Form for Assignments Per Course</h1>
+    <p class="imageParagraph"><img src="img/writing-assignment-190304.jpg" alt="indexLogo" width="600" height="300"></p>
+    <br>
+    <div id="form" class="assigmentPerCourse">
+        <form action="" method="" >
+            
+            <fieldset>
+                <legend>Add Assignment Per Course</legend>
+                <label for="assTitle">Title</label>
+                <input type="text" id="assTitle" name="assTitle" placeholder="Assignment Title" required>
+                
+                <br>
+                <label for="assDescription">Description</label>
+                <input type="text" id="assDescription" name="assDescription" placeholder="Assignment Description" required>
+
+                <br>
+                <label for="assSubDateTime">Subscription Date</label>
+                <input type="date" id="assSubDateTime" name="assSubDateTime" required>
+
+                <br>
+                <label for="assOralMark">Oral Mark</label>
+                <input type="number" id="assOralMark" name="assOralMark" placeholder="Oral Mark" required>
+
+                <br>
+                <label for="assTotalMark">Total Mark</label>
+                <input type="number" id="assTotalMark" name="assTotalMark" placeholder="Total Mark" required>
+                
+                <br>
+                <label for="courseTitle">Course Title</label>
+                <input type="text" id="courseTitle" name="courseTitle" placeholder="Course Title" required>
+                
+                <br>
+                <label for="submit"></label>
+                <input type="submit" id="submit" value="Προσθήκη"/>
+                <button type="submit" id="update" hidden>Επεξεργασία</button>
+                <input type="reset" id="reset" value="Καθαρισμός"/>
+
+            </fieldset>
+            <div id="assignments"> </div>
+            <script src="js/assignmentsPerCourse.js"></script>
+            <div class="goto"><a href="index.html" target="_self">Home</a></div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add / Edit Form for Students</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+</head>
+<body class="bodyGeneral">
+    <h1 class="headingParagraph">Add / Edit Form for Students</h1>
+    <p class="imageParagraph"><img src="img/shutterstock_218235004.jpg" alt="indexLogo" width="600" height="300"></p>
+    <br>
+    <div id="form">
+        <form action="" method="" >
+            
+            <fieldset>
+                <legend>Add Student</legend>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+
+                <br>
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+
+                <br>
+                <label for="tuitionFees">Tuition Fees</label>
+                <input type="number" id="tuitionFees" name="tuitionFees"  required>
+                
+                <br>
+                <label for="submit"></label>
+                <input type="submit" id="submit" value="Προσθήκη"/>
+                <button type="submit" id="update" hidden>Επεξεργασία</button>
+                <input type="reset" id="reset" value="Καθαρισμός"/>
+
+            </fieldset>
+            <div id="students"> </div>
+            <script src="js/students.js"></script>
+            <div class="goto"><a href="index.html" target="_self">Home</a></div>
+    </div>
+
+
+</body>
+</html>
